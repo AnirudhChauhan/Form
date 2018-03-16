@@ -9,7 +9,19 @@ class ConfirmForm extends Component {
     }
     submit = () => {
         console.log("Success");
-        alert("Submitted")
+        alert("Submitted");
+        localStorage.removeItem('name1');
+        localStorage.removeItem('familyname1');
+        localStorage.removeItem('contact1');
+        localStorage.removeItem('email1');
+        localStorage.removeItem('room1');
+        localStorage.removeItem('block1');
+        localStorage.removeItem('floor1');
+        localStorage.removeItem('building1');
+        localStorage.removeItem('street1');
+        localStorage.removeItem('zip1');
+        this.props.history.push("./");
+
     }
     render() {
         return (
